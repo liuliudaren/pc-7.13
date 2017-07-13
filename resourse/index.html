@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<!--inject:css-->
+	<!--endinject-->
+</head>
+<body>
+	<div class="nau">
+		<ul class="nau_main">
+			<li><a href="#">天猫首页</a></li>
+			<li><a href="#">天猫商城</a></li>
+			<li><a href="#">天猫吼吼</a></li>
+			<li><a href="#">苗先生</a></li>
+			<li><a href="#">时令水果</a></li>
+			<li><a href="#">季节移库</a></li>
+			<li><a href="#">再来一盘</a></li>
+			<li><a href="#">烤鱼</a></li>
+		</ul>
+		<ul class="nau_sub">
+			<li>1111111111</li>
+			<li>22222222宜</li>
+			<li>33333333</li>
+			<li>444444</li>
+			<li>5555555aij</li>
+			<li>而6666666热大</li>
+			<li>0多发7777777大</li>
+			<li>安放888888</li>
+		</ul>
+
+	</div>
+	 <div class="banner">
+        <ul class="">
+            <li><a href=""><img src="images/banner1.png" alt=""></a></li>
+            <li><a href=""><img src="images/banner2.png" alt=""></a></li>
+            <li><a href=""><img src="images/banner3.png" alt=""></a></li>
+            <li><a href=""><img src="images/banner4.png" alt=""></a></li>
+        </ul>
+        <div class="left-btn"></div>
+        <div class="right-btn"></div>
+        <div class="img-btn-list"></div>
+    </div>
+	<!--inject:js-->
+	<!--endinject-->
+	<script>
+		require(["js/jq.min.js","js/plugins.js"],function($,p){
+			p.banner($(".banner"),$(".img-btn-list"),$(".left-btn"),$(".right-btn"),2000,true);
+			$(".nau").subMenu()
+		});
+
+
+	</script>
+</body>
+	
+</html>
